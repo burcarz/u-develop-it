@@ -12,9 +12,9 @@ app.use(express.json());
 app.use('./api', apiRoutes);
 
 // default response for any other request (NOT FOUND)
-app.use((req, res) => {
-    res.status(404).end();
-})
+// app.use((req, res) => {
+//     res.status(404).end();
+// })
 
 db.connect(err => {
     if (err) throw err;
